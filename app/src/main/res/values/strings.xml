@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">Notification Scheduler</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- content main xml -->
+    <string name="network_type_required">Network Type Required:</string>
+    <string name="none">None</string>
+    <string name="any">Any</string>
+    <string name="wifi">Wifi</string>
+    <string name="requires">Requires:</string>
+    <string name="device_idle">Device Idle</string>
+    <string name="device_charging">Device Charging</string>
+    <string name="override_deadline">Override Deadline:</string>
+    <string name="not_set">Not Set</string>
+    <string name="schedule_job">Schedule job</string>
+    <string name="cancel_job">Cancel Job</string>
 </resources>
