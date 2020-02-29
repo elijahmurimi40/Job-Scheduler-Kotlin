@@ -20,4 +20,10 @@
     <string name="notifications_from_job_service">Notifications from Job Service</string>
     <string name="job_service">Job Service</string>
     <string name="your_job_is_running">Your Job is Running</string>
+
+    <!-- Main Activity -->
+    <string name="no_jobs">No Jobs</string>
+    <string name="jobs_cancelled">Jobs Cancelled</string>
+    <string name="set_constraint">Please set at least one constraint</string>
+    <string name="job_scheduled">Job Scheduled, job will run when the constraints are met.</string>
 </resources>

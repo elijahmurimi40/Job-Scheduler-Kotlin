@@ -7,14 +7,13 @@ import android.content.Context
 import com.fortie40.notificationscheduler.jobs.ShowNotification
 
 class NotificationJobService: JobService() {
-    private val notifyManager = getSystemService(Context.NOTIFICATION_SERVICE)
-            as NotificationManager
-
     override fun onStopJob(p0: JobParameters?): Boolean {
         return true
     }
 
     override fun onStartJob(p0: JobParameters?): Boolean {
+        val notifyManager = getSystemService(Context.NOTIFICATION_SERVICE)
+                as NotificationManager
         val showNotification = ShowNotification(notifyManager, this)
         showNotification.createNotificationChannel()
         showNotification.sendNotifications()
