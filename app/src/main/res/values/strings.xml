@@ -26,4 +26,5 @@
     <string name="jobs_cancelled">Jobs Cancelled</string>
     <string name="set_constraint">Please set at least one constraint</string>
     <string name="job_scheduled">Job Scheduled, job will run when the constraints are met.</string>
+    <string name="seconds">%1$s Seconds</string>
 </resources>
