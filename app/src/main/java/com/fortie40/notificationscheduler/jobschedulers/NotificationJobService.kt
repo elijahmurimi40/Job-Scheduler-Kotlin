@@ -4,6 +4,7 @@ import android.app.NotificationManager
 import android.app.job.JobParameters
 import android.app.job.JobService
 import android.content.Context
+import com.fortie40.notificationscheduler.R
 import com.fortie40.notificationscheduler.jobs.ShowNotification
 
 class NotificationJobService: JobService() {
@@ -16,7 +17,8 @@ class NotificationJobService: JobService() {
                 as NotificationManager
         val showNotification = ShowNotification(notifyManager, this)
         showNotification.createNotificationChannel()
-        showNotification.sendNotifications()
+        showNotification.sendNotifications(this.getString(R.string.job_started),
+            this.getString(R.string.your_job_is_running))
         //return true
         return false
     }

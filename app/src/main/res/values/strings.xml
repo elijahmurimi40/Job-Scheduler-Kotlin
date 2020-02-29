@@ -18,7 +18,7 @@
     <!-- Show Notification class -->
     <string name="job_service_notification">Job Service notification</string>
     <string name="notifications_from_job_service">Notifications from Job Service</string>
-    <string name="job_service">Job Service</string>
+    <string name="job_started">Job has Started</string>
     <string name="your_job_is_running">Your Job is Running</string>
 
     <!-- Main Activity -->

@@ -42,13 +42,13 @@ class ShowNotification() {
         }
     }
 
-    private fun getNotificationBuilder(): NotificationCompat.Builder {
+    private fun getNotificationBuilder(title: String, text: String): NotificationCompat.Builder {
         val notificationIntent = Intent(mContext, MainActivity::class.java)
         val notificationPendingIntent = PendingIntent.getActivity(mContext,
             NOTIFICATION_ID, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT)
         return NotificationCompat.Builder(mContext, PRIMARY_CHANNEL_ID)
-            .setContentTitle(mContext.getString(R.string.job_service))
-            .setContentText(mContext.getString(R.string.your_job_is_running))
+            .setContentTitle(title)
+            .setContentText(text)
             .setSmallIcon(R.drawable.ic_job_running)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setDefaults(NotificationCompat.DEFAULT_ALL)
@@ -56,8 +56,8 @@ class ShowNotification() {
             .setAutoCancel(true)
     }
 
-    fun sendNotifications() {
-        val notifyBuilder = getNotificationBuilder()
+    fun sendNotifications(title: String, text: String) {
+        val notifyBuilder = getNotificationBuilder(title, text)
         mNotifyManager.notify(NOTIFICATION_ID, notifyBuilder.build())
 
     }
