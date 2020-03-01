@@ -38,7 +38,6 @@ class ShowNotification() {
             }
 
             mNotifyManager.createNotificationChannel(channel)
-
         }
     }
 
@@ -59,6 +58,5 @@ class ShowNotification() {
     fun sendNotifications(title: String, text: String) {
         val notifyBuilder = getNotificationBuilder(title, text)
         mNotifyManager.notify(NOTIFICATION_ID, notifyBuilder.build())
-
     }
 }

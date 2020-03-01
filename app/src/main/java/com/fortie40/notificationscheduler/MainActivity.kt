@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.fortie40.notificationscheduler.jobschedulers.NotificationJobService
+import com.fortie40.notificationscheduler.jobschedulers.WorkJobService
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             R.id.wifi_network -> selectedNetworkOption = JobInfo.NETWORK_TYPE_UNMETERED
         }
 
-        val serviceName = ComponentName(packageName, NotificationJobService::class.java.name)
+        val serviceName = ComponentName(packageName, WorkJobService::class.java.name)
         val builder = JobInfo.Builder(JOB_ID, serviceName)
             .setRequiredNetworkType(selectedNetworkOption)
             .setRequiresDeviceIdle(idle_switch.isChecked)

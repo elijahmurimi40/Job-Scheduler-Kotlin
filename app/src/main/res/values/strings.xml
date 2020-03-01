@@ -18,8 +18,6 @@
     <!-- Show Notification class -->
     <string name="job_service_notification">Job Service notification</string>
     <string name="notifications_from_job_service">Notifications from Job Service</string>
-    <string name="job_started">Job has Started</string>
-    <string name="your_job_is_running">Your Job is Running</string>
 
     <!-- Main Activity -->
     <string name="no_jobs">No Jobs</string>
@@ -27,4 +25,10 @@
     <string name="set_constraint">Please set at least one constraint</string>
     <string name="job_scheduled">Job Scheduled, job will run when the constraints are met.</string>
     <string name="seconds">%1$s Seconds</string>
+
+    <!-- Work Class -->
+    <string name="job_started">Job has Started</string>
+    <string name="your_job_is_running">Your Job is Running</string>
+    <string name="job_has_finished">Job has Finished</string>
+    <string name="your_job_has_finished_running">Your Job has Finished Running</string>
 </resources>
