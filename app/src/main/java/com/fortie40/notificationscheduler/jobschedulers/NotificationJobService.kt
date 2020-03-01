@@ -5,12 +5,12 @@ import android.app.job.JobParameters
 import android.app.job.JobService
 import android.content.Context
 import com.fortie40.notificationscheduler.R
-import com.fortie40.notificationscheduler.jobs.ShowNotification
+import com.fortie40.notificationscheduler.helperclasses.ShowNotification
 
 class NotificationJobService: JobService() {
     private lateinit var notifyManager: NotificationManager
     private lateinit var showNotification: ShowNotification
-    
+
     override fun onStopJob(p0: JobParameters?): Boolean {
         return true
     }

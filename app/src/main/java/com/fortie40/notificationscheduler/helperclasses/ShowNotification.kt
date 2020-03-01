@@ -1,4 +1,4 @@
-package com.fortie40.notificationscheduler.jobs
+package com.fortie40.notificationscheduler.helperclasses
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
