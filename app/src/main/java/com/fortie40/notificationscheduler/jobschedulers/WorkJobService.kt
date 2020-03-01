@@ -21,6 +21,7 @@ class WorkJobService: JobService() {
     private lateinit var job: Job
 
     override fun onStopJob(p0: JobParameters?): Boolean {
+        cancelJoinWork()
         return true
     }
 
@@ -50,9 +51,13 @@ class WorkJobService: JobService() {
         }
     }
 
-    fun cancelJoinWork() {
+    private fun cancelJoinWork() {
         CoroutineScope(IO).launch {
             work.cancelJoinWork(job)
+            withContext(Main) {
+                showNotification.sendNotifications(getString(R.string.job_has_been_stopped),
+                    getString(R.string.your_job_has_stopped_running))
+            }
         }
     }
 }

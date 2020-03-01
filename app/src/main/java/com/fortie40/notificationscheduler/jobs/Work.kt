@@ -6,7 +6,10 @@ import kotlinx.coroutines.delay
 
 class Work {
     suspend fun doWork() {
-        delay(10000)
+        for (i in 1..10) {
+            delay(2000)
+            println("Word $i")
+        }
     }
 
     suspend fun cancelJoinWork(job: Job) {

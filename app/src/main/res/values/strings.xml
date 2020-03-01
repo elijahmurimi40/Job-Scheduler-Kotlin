@@ -31,4 +31,6 @@
     <string name="your_job_is_running">Your Job is Running</string>
     <string name="job_has_finished">Job has Finished</string>
     <string name="your_job_has_finished_running">Your Job has Finished Running</string>
+    <string name="job_has_been_stopped">Job has Been Stopped</string>
+    <string name="your_job_has_stopped_running">Your Job has Stopped Running</string>
 </resources>
