@@ -1,3 +1,7 @@
+<p align="center"><img 
+	src="https://user-images.githubusercontent.com/25055256/81497128-28dce800-92c5-11ea-90ef-db81e62ed066.png" 
+	alt="Logo" width="40px" height="40px" /></p>
+  
 # Job-Scheduler-Kotlin
 A user selects constraints and schedule a job. When that job is executed, the app posts a notification
 
