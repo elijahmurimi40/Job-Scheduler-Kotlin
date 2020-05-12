@@ -9,6 +9,7 @@ import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.fortie40.notificationscheduler.jobschedulers.WorkJobService
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -76,11 +77,9 @@ class MainActivity : AppCompatActivity() {
         if (constraintSet) {
             val myJobInfo = builder.build()
             mScheduler!!.schedule(myJobInfo)
-            Toast.makeText(this, getString(R.string.job_scheduled),
-                Toast.LENGTH_SHORT).show()
+            Snackbar.make(cancel_job, getString(R.string.job_scheduled), Snackbar.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(this, getString(R.string.set_constraint),
-                Toast.LENGTH_SHORT).show()
+            Snackbar.make(cancel_job, getString(R.string.set_constraint), Snackbar.LENGTH_SHORT).show()
         }
     }
 
@@ -88,9 +87,9 @@ class MainActivity : AppCompatActivity() {
         if (mScheduler != null) {
             mScheduler!!.cancelAll()
             mScheduler = null
-            Toast.makeText(this, getString(R.string.jobs_cancelled), Toast.LENGTH_SHORT).show()
+            Snackbar.make(cancel_job, getString(R.string.jobs_cancelled), Snackbar.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(this, getString(R.string.no_jobs), Toast.LENGTH_SHORT).show()
+            Snackbar.make(cancel_job, getString(R.string.no_jobs), Snackbar.LENGTH_SHORT).show()
         }
     }
 }
