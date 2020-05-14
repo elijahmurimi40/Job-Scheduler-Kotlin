@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         if (constraintSet) {
             val myJobInfo = builder.build()
             mScheduler!!.schedule(myJobInfo)
-            Snackbar.make(cancel_job, getString(R.string.job_scheduled), Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(cancel_job, getString(R.string.job_scheduled), Snackbar.LENGTH_LONG).show()
         } else {
             Snackbar.make(cancel_job, getString(R.string.set_constraint), Snackbar.LENGTH_SHORT).show()
         }
