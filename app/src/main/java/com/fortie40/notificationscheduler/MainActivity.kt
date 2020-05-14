@@ -6,7 +6,6 @@ import android.content.ComponentName
 import android.content.Context
 import android.os.Bundle
 import android.widget.SeekBar
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.fortie40.notificationscheduler.jobschedulers.WorkJobService
 import com.google.android.material.snackbar.Snackbar

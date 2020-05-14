@@ -7,7 +7,7 @@ import kotlinx.coroutines.delay
 class Work {
     suspend fun doWork() {
         for (i in 1..10) {
-            delay(2000)
+            delay(1000)
             println("Word $i")
         }
     }
