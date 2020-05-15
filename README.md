@@ -7,6 +7,19 @@ A user selects constraints and schedule a job. When that job is executed, the ap
 
 Minimum Android Version 5.0 (Lollipop)
 
+### Demo
+<img src="demo/NotificationScheduler1.gif" alt="Demo" height="500px" />
+
+### Constraints stop being met
+<img src="demo/NotificationScheduler2.gif" alt="Demo" height="500px" />
+	
+	
+### Override deadline constraint
+<img src="demo/NotificationScheduler3.gif" alt="Demo" height="500px" />
+
+### Cancelling a job
+<img src="demo/NotificationScheduler4.gif" alt="Demo" height="500px" />
+
 ### License
 
 MIT License
